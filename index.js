@@ -218,6 +218,90 @@
 // }
 
 //Q18.
-// var date = new Date()
+// var laterDate = new Date("2021-1-1");
 
-// date.setFullYear(2015)
+// laterDate.setMonth(laterDate.getMonth() );
+// laterDate.setDate(0);
+
+// document.write("Last day of the last month of 2020:", laterDate);
+
+//Q19.
+// var ramadanStartDate = new Date("2015-06-18");
+
+// var currentDate = new Date();
+
+// var timeDifference = currentDate.getTime() - ramadanStartDate.getTime();
+
+// var daysPassed = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+// document.write( daysPassed + "days have passed since 1st Ramadan.2015 ");
+
+//Q20.
+// var referenceDate = new Date("Sat Dec  05 2015 22:50:16 GMT +0500(PKT)")
+
+// var currentDate = new Date()
+
+// var timeDifference = currentDate.getTime() - referenceDate.getTime()
+
+// var secondsPassed = Math.floor(timeDifference/(1000))
+
+// document.write(secondsPassed + " "+ "seconds had passed since beginning of 2015")
+
+
+//Q21.
+
+// var currentDate = new Date()
+// document.write("current date: " + currentDate + "<br>")
+// var currentHour = currentDate.getHours()
+
+// var hourAgo = currentHour-1
+
+// currentDate.setHours(hourAgo)
+
+// document.write("1 hour ago, it was" + currentDate)
+
+//Q22.
+
+// var currentDate = new Date()
+// var currentYear = currentDate.getFullYear()
+
+// var yearBack = currentYear - 100
+
+// var year100Back = new Date()
+// year100Back.setFullYear(yearBack)
+
+// alert("Current Date: " + currentDate + "\n 100 Years Back, it was" + " " + year100Back)
+
+//Q23.
+
+// var userAge = parseInt(prompt("Please enter your age: "))
+
+// var date = new Date()
+// var currentYear = date.getFullYear()
+
+// var birthYear = currentYear - userAge
+
+// document.write("Your age is " + userAge + "<br>")
+// document.write("Your birth year is  " + birthYear)
+
+//Q24.
+
+// var consumerName = prompt("Enter your name to print your bill: ");
+// var date = new Date();
+// var month = date.getMonth();
+// var monthArray = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+// var unitsUse = 450;
+// var chargesperUnit = 14;
+// var netamount = unitsUse * chargesperUnit;
+// netamount = netamount.toFixed(2);
+// var latefee = 500;
+// var latebill = parseFloat(netamount) + latefee; 
+
+// document.write("<h1>K-Electric Bill</h1>" + "<br>");
+// document.write("Customer Name: " + consumerName + "<br>");
+// document.write("Month: " + monthArray[month] + "<br>");
+// document.write("Units Consumed: " + unitsUse + "<br>");
+// document.write("Charges per Unit: " + chargesperUnit + "<br>");
+// document.write("Net Amount Payable (before due date): Rs. " + netamount + "<br>");
+// document.write("Late Fee: Rs. " + latefee + "<br>");
+// document.write("Net Amount Payable (including late fee): Rs. " + latebill + "<br>");
